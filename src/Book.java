@@ -7,15 +7,17 @@ public class Book {
     Author author;
     double price;
     int qty;
-    public Book(String bname, Author author1, double price1, int qty1){
-        name = bname;
-        author = author1;
-        price = price1;
-        qty = qty1;
+    public Book(String name, Author author, double price, int qty){
+        this.name = name;
+        this.author = author;
+        this.price = price;
+        this.qty = qty;
     }
 
-    public void Print(){
-        //Book Book1 = new Book("Shrimp on adventures",author,20.99, 50  );
+    public Book(String name, Author author, double price){
+        this.name = name;
+        this.author = author;
+        this.price = price;
     }
 
     public String getName() {
@@ -44,6 +46,6 @@ public class Book {
 
     @Override
     public String toString(){
-        return "";
+        return "Book: " + name + ", Author: " + author.name + ", Price: " + price;
     }
 }

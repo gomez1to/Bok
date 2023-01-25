@@ -8,10 +8,10 @@ public class Author{
     String email;
     char gender;
 
-    public Author(String name1, String email1, char gender1) {
-        name = name1;
-        email = email1;
-        gender = gender1;
+    public Author(String name, String email, char gender) {
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
     }
 
 }
